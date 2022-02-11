@@ -1,52 +1,105 @@
 * {
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
-
+  
+body {
+    font-family: Arial;
+    margin: 0;
+}
+  
 header {
-    padding: 20px 20px;
-    background-color: skyblue;
-    display: flex;
-    justify-content: flex-start;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
+    background: #323335;
+    color: #fff;
 }
-  
+
 header h1 {
-    font-weight: bold;
-    margin: 0;
+    color: #75d6b9;
     font-size: 50px;
 }
-  
-header a {
-    text-decoration: none;
-}
-  
-header nav {
-    margin: 7px 0;
-}
-  
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-  
-header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 2vw;
+
+header img {
+    height: 200px;
+    width: 200px;
+    border: 5px solid #75d6b9;
 }
 
-header div {
+.name-img {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(55, 59, 59);
+}
+  
+nav a {
+    color: #75d6b9;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 5px solid #75d6b9;
+    margin: 5px;
+}
+  
+main {
     display: flex;
     flex-wrap: wrap;
+    margin: 20px;
+}
+  
+aside {
+    flex: 1;
+    background-color: #fefaff;
+    padding-right: 10px;
+    text-align: right;
+    border-right: 5px solid #75d6b9;
+}
+
+aside h2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0;
+    font-size: 30px;
+}
+  
+.products {
+    flex: 4;
+    background-color: #fefaff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.card {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #75d6b9;
+    padding: 10px;
+    flex: 0 0 400px;
+    margin: 5px;
+}
+  
+.card header {
+    padding: 20px;
+}
+  
+.card p {
+    text-align: center;
+}
+  
+.card img {
     width: 100%;
 }
-
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+  
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
 }
+}
+  

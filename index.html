@@ -1,51 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Kevin Melter - Professional Portfolio</title>
-    </head>
-    <body>
-        <header>
-            <img src="./assets/images/kmimage.PNG" alt="" />
-            <div class="title-nav">
-                <h1>
-                    <a href="/">Kevin Melter</a>
-                </h1>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">About Me</a>
-                        </li>
-                        <li>
-                            <a href="#">My Work</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!--about me section-->
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto, odio laboriosam minus distinctio similique delectus iste possimus. Error suscipit quos fugiat quae praesentium natus voluptatum ea amet incidunt! Nisi! </p>
-        </section>
-        <!--work section-->
-        <section class="my-work">
-            <h2>Work</h2>
-        </section>
-        <!--contact section-->
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <div class="contact-info">
-                <address>
-                    email@website.com <br/>
-                    123-456-7890 <br/>
-                    <a href="">GitHub</a>
-                </address>
-            </div>
-        </section>
-    </body>
+<html>
+  <head>
+    <title>Responsive Web Design</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="name-img">
+        <h1>Kevin Melter</h1>
+        <img src="./assets/images/kmimage.PNG" />
+      </div>
+    <!-- Navbar -->
+      <nav>
+        <a href="#">About Me</a>
+        <a href="#">My Work</a>
+        <a href="#">Contact Me</a>
+      </nav>
+    </header>
+    <!-- Body -->
+    <main>
+      <!-- Sidebar -->
+      <aside>
+        <h2>About <br/> Me</h2>
+      </aside>
+      <!-- Product Cards -->
+      <div class="products">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae fugiat dicta eligendi doloribus itaque a porro, neque sint accusantium dolores culpa eos libero ducimus ipsa, perferendis inventore esse pariatur ut.</p>
+      </div>
+    </main>
+
+    <!-- Body -->
+    <main>
+        <!-- Sidebar -->
+        <aside>
+          <h2>Work</h2>
+        </aside>
+        <!-- Product Cards -->
+        <div class="products">
+          <section class="card">
+            <header>Camera</header>
+            <img src="" alt="" />
+            <p>Price: $300</p>
+          </section>
+          <section class="card">
+            <header>Tablet</header>
+            <img src="" alt="" />
+            <p>Price: $150</p>
+          </section>
+          <section class="card">
+            <header>Toilet Paper</header>
+            <img
+              src="" alt=""
+            />
+            <p>Price: $30</p>
+          </section>
+          <section class="card">
+            <header>Wooden Spoons</header>
+            <img
+              src="" alt=""
+            />
+            <p>Price: $10</p>
+          </section>
+        </div>
+      </main>
+
+      <!-- Body -->
+    <main>
+        <!-- Sidebar -->
+        <aside>
+          <h2>Contact <br/> Me</h2>
+        </aside>
+        <!-- Product Cards -->
+        <div class="products">
+            <!--Contact Information goes here-->
+        </div>
+    </main>
+
+  </body>
 </html>
