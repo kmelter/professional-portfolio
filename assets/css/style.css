@@ -3,12 +3,13 @@
 }
   
 body {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
   
 header {
-    background: #323335;
+    background-image: url("../images/cosmos.jpg");
+    background-size: cover;
 }
 
 header h1 {
@@ -23,7 +24,7 @@ header h1 {
 header img {
     height: 200px;
     width: 200px;
-    border: 5px solid #75d6b9;
+    border: 3px solid #75d6b9;
     margin: 20px;
 }
 
@@ -57,7 +58,12 @@ main {
     flex-wrap: wrap;
     margin: 20px;
 }
-  
+
+main header {
+    color: #fefaff;
+    background: #323335;
+}
+
 aside {
     flex: 1;
     background-color: #fefaff;
@@ -71,7 +77,7 @@ aside h2 {
     justify-content: flex-end;
     align-items: flex-start;
     margin: 0;
-    font-size: 30px;
+    font-size: 35px;
 }
   
 .about-me {
@@ -130,10 +136,14 @@ aside h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
 }
 
 .contact a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
     font-size: 24px;
 }
 
