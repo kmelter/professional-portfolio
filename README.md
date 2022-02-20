@@ -14,4 +14,4 @@ To feature work examples, a description of myself, and links to contact me.
 * https://github.com/kmelter/professional-portfolio
 
 ## Screenshot
-![Alt text]()
+![Alt text](./assets/images/professional-portfolio-screenshot.png)
