@@ -48,11 +48,6 @@ nav a {
     margin: 5px;
 }
 
-nav a:hover {
-    color: rgb(0, 183, 255);
-    border-bottom: 5px solid rgb(0, 183, 255);
-}
-  
 main {
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +77,8 @@ aside h2 {
     font-size: 35px;
     background-color: #fefaff;
 }
-  
+
+/* About Me section */
 .about-me {
     flex: 4;
     background-color: #fefaff;
@@ -92,6 +88,7 @@ aside h2 {
     justify-content: center;
 }
 
+/* Work examples section */
 .work-examples {
     flex: 4;
     color: #fefaff;
@@ -124,17 +121,16 @@ aside h2 {
     margin-top: 100px;
 }
 
-#large-card h2 {
-    margin-top: 250px;
-}
-
-.card img:hover {opacity: 100%;}
-
 #large-card {
     flex: 0 0 810px;
     max-height: 400px;
 }
 
+#large-card h2 {
+    margin-top: 250px;
+}
+
+/* Contact section */
 .contact {
     flex: 4;
     background-color: #fefaff;
@@ -158,6 +154,14 @@ aside h2 {
     padding-bottom: 5px;
 }
 
+/* Link interactions */
+nav a:hover {
+    color: rgb(0, 183, 255);
+    border-bottom: 5px solid rgb(0, 183, 255);
+}
+
+.card img:hover {opacity: 100%;}
+
 .contact a:link {color:rgb(55, 59, 59);}
 
 .contact a:visited {color: rgb(55, 59, 59);}
@@ -166,6 +170,8 @@ aside h2 {
 
 .contact a:active {color: red;}
 
+
+/* Adaptive layout section*/
 @media screen and (max-width: 1060px) {
     h1 {
         width: 220px;
