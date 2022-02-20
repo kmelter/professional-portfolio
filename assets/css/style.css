@@ -166,10 +166,51 @@ aside h2 {
 
 .contact a:active {color: red;}
 
-@media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
+@media screen and (max-width: 1060px) {
+    h1 {
+        width: 220px;
+        padding-bottom: 115px;
+        margin-right: 5px;
+    }
+    
+    #large-card {
+        max-width: 450px;
+    }
+
+    #large-card h2 {
+        margin-top: 100px;
     }
 }
-  
+
+@media screen and (max-width: 768px) {
+    header img {
+        width: 100px;
+        height: 100px;
+        margin-left: 5px;
+    }
+    
+    main, nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    aside {
+        border-right: none;
+        text-align: center;
+    }
+
+    .contact {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #large-card {
+        max-width: 450px;
+    }
+
+    #large-card h2 {
+        margin-top: 100px;
+    }
+}
